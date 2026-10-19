@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLUSH | Decoración de eventos</title>
+
+    <!-- Conecta el archivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y MENÚ -->
+    <header>
+        <h1>BLUSH</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section id="inicio">
+            <h2>Decoramos tus momentos especiales</h2>
+            <p>
+                Creamos espacios únicos para celebrar tus eventos
+                y convertirlos en recuerdos inolvidables.
+            </p>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+            <p>Aquí describiremos los servicios que ofrece el negocio.</p>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria">
+            <h2>Nuestros eventos</h2>
+            <p>Aquí mostraremos fotografías de decoraciones anteriores.</p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <p>¿Estás planeando un evento? ¡Hablemos!</p>
+
+            <!-- Reemplazaremos estos enlaces con los reales -->
+            <a href="#">WhatsApp</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 BLUSH. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
