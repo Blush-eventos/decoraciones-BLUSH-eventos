@@ -217,6 +217,71 @@ footer {
     background-color: #1877F2;
 }
 
+/* SERVICIOS Y CATÁLOGO */
+
+.catalogo-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* ESPACIO PARA FOTOGRAFÍAS */
+
+.imagen-pendiente {
+    height: 230px;
+    background-color: #f3dce5;
+    color: #985b75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* INFORMACIÓN DE LA TARJETA */
+
+.tarjeta-info {
+    padding: 20px;
+}
+
+.tarjeta-info h3 {
+    color: #985b75;
+    margin-top: 0;
+}
+
+.tarjeta-info p {
+    margin-bottom: 25px;
+}
+
+/* FONDO DEL CATÁLOGO */
+
+#mobiliario {
+    background-color: #fff0f5;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 768px) {
+    .catalogo-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
 .correo {
     background-color: #985B75;
 }
