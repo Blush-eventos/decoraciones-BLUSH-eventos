@@ -1,0 +1,76 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffafc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #f3dce5;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #985b75;
+}
+
+/* CONTACTO */
+
+#contacto {
+    background-color: #f3dce5;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
