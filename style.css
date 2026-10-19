@@ -74,3 +74,51 @@ footer {
         padding: 40px 15px;
     }
 }
+
+/* SECCIÓN DE INICIO */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8e8ee;
+}
+
+.hero-contenido {
+    max-width: 650px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: #6e344f;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #a15c7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: #793d59;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+}
