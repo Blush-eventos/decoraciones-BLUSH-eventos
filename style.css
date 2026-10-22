@@ -453,3 +453,32 @@ footer {
         max-width: 450px;
     }
 }
+.mision-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 950px;
+    margin: 35px auto;
+}
+
+.mision-vision-tarjeta {
+    background-color: #fffafc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.mision-vision-tarjeta h3 {
+    color: #985b75;
+    margin-bottom: 15px;
+}
+
+.mision-vision-tarjeta p {
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .mision-vision {
+        grid-template-columns: 1fr;
+    }
+}
