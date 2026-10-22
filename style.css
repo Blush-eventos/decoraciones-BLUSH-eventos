@@ -482,3 +482,14 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.lista-paquete {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.lista-paquete li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
