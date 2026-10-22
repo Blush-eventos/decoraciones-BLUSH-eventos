@@ -1,9 +1,359 @@
+
+/* ESTILOS GENERALES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffafc;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #f3dce5;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+/* SECCIONES */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #985b75;
+}
+
+/* CONTACTO */
+
+#contacto {
+    background-color: #f3dce5;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    padding: 15px;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
+
+
+/* PORTADA PRINCIPAL */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: #f8e8ee;
+}
+
+.imagen-portada {
+    width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    display: block;
+}
+
+.hero-contenido {
+    max-width: 750px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: #6e344f;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #a15c7d;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: #793d59;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+
+/* GALERÍA DE EVENTOS */
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.evento {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.evento img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.evento h3 {
+    color: #985b75;
+    padding: 15px;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.evento:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 768px) {
+    .galeria-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* BOTONES DE CONTACTO */
+
+.contacto-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contacto-boton {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.contacto-boton:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+}
+
+/* COLORES DE CADA BOTÓN */
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.instagram {
+    background-color: #C13584;
+}
+
+.facebook {
+    background-color: #1877F2;
+}
+
+/* SERVICIOS Y CATÁLOGO */
+
+.catalogo-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* TARJETAS */
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* ESPACIO PARA FOTOGRAFÍAS */
+
+.imagen-pendiente {
+    height: 230px;
+    background-color: #f3dce5;
+    color: #985b75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* INFORMACIÓN DE LA TARJETA */
+
+.tarjeta-info {
+    padding: 20px;
+}
+
+.tarjeta-info h3 {
+    color: #985b75;
+    margin-top: 0;
+}
+
+.tarjeta-info p {
+    margin-bottom: 25px;
+}
+
+/* FONDO DEL CATÁLOGO */
+
+#mobiliario {
+    background-color: #fff0f5;
+}
+
+/* ADAPTACIÓN A CELULARES */
+
+@media (max-width: 768px) {
+    .catalogo-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.correo {
+    background-color: #985B75;
+}
+
+/* TRES PAQUETES EN UNA FILA */
+
+.paquetes-contenedor {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* EFECTO AL PASAR EL MOUSE */
+
+.paquete {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.paquete:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(152, 91, 117, 0.25);
+}
+
+/* INFORMACIÓN DESPLEGABLE */
+
+.paquete-detalles {
+    margin: 20px 0;
+    padding: 12px;
+    background-color: #fff0f5;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.paquete-detalles summary {
+    cursor: pointer;
+    color: #985b75;
+    font-weight: bold;
+}
+
+.paquete-detalles p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* EN CELULARES */
+
+@media (max-width: 768px) {
+    .paquetes-contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CALENDARIO */
+
+#calendario {
+    background-color: #fff0f5;
+}
+
+.calendario-contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.calendario-contenedor iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
 }
 
 /* CALENDARIO DE DISPONIBILIDAD */
 
 #calendario {
-    background-color: #F5EBDD;
+    background-color: #fff0f5;
     text-align: center;
     padding: 60px 20px;
 }
@@ -22,7 +372,7 @@
 
 .calendario-aviso {
     font-size: 14px;
-    color: #806139;
+    color: #795769;
     margin-bottom: 25px;
 }
 /* FOTOGRAFÍAS DE LOS PAQUETES */
@@ -39,7 +389,7 @@
     width: 100%;
     height: 350px;
     object-fit: contain;
-    background-color: #F2E9DC;
+    background-color: #f8e8ee;
 }
 /* ARREGLAR TAMAÑO DE LOS PAQUETES */
 
@@ -63,7 +413,7 @@
     width: 100%;
     height: 280px;
     object-fit: contain;
-    background-color: #F2E9DC;
+    background-color: #f8e8ee;
 }
 
 /* PANTALLAS PEQUEÑAS */
@@ -112,14 +462,14 @@
 }
 
 .mision-vision-tarjeta {
-    background-color: #FAF6EF;
+    background-color: #fffafc;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
 
 .mision-vision-tarjeta h3 {
-    color: #A98754;
+    color: #985b75;
     margin-bottom: 15px;
 }
 
