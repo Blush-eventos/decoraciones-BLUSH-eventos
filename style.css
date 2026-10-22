@@ -331,3 +331,21 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* CALENDARIO */
+
+#calendario {
+    background-color: #fff0f5;
+}
+
+.calendario-contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.calendario-contenedor iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+}
